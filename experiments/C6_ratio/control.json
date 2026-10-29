@@ -1,0 +1,55 @@
+{
+  "digits/vision": {
+    "control": "CLEARED",
+    "rho_noise": [
+      0.627,
+      0.504,
+      0.723
+    ],
+    "rho_shuffle": [
+      -0.05,
+      -0.237,
+      0.129
+    ],
+    "top_d_noise": 0.0589,
+    "top_d_shuffle": 0.0071,
+    "replication": "NOT REPLICATED",
+    "repl_rho": [
+      0.384,
+      0.222,
+      0.522
+    ],
+    "repl_top_d_noise": [
+      0.0409,
+      0.021,
+      0.0591
+    ]
+  },
+  "covtype/tabular": {
+    "control": "CLEARED",
+    "rho_noise": [
+      0.51,
+      0.345,
+      0.664
+    ],
+    "rho_shuffle": [
+      -0.072,
+      -0.262,
+      0.127
+    ],
+    "top_d_noise": 0.0301,
+    "top_d_shuffle": -0.0127,
+    "replication": "NOT REPLICATED",
+    "repl_rho": [
+      0.403,
+      0.217,
+      0.566
+    ],
+    "repl_top_d_noise": [
+      0.0341,
+      0.0137,
+      0.0523
+    ]
+  },
+  "_all_cleared_and_replicated": false
+}

@@ -1,0 +1,58 @@
+{
+  "digits/vision": {
+    "verdict": "PASS",
+    "rho": 0.627,
+    "rho_CI": [
+      0.504,
+      0.723
+    ],
+    "r_span": 12.1,
+    "r_max": 0.5943,
+    "d_noise_at_top_r": [
+      0.0589,
+      0.0462,
+      0.0721
+    ],
+    "cond1_monotone": true,
+    "cond2_bites_at_high_r": true,
+    "n_cells": 140
+  },
+  "20news/text": {
+    "verdict": "FAIL",
+    "rho": 0.184,
+    "rho_CI": [
+      -0.004,
+      0.355
+    ],
+    "r_span": 19.2,
+    "r_max": 0.3003,
+    "d_noise_at_top_r": [
+      0.0187,
+      -0.0041,
+      0.0448
+    ],
+    "cond1_monotone": false,
+    "cond2_bites_at_high_r": false,
+    "n_cells": 140
+  },
+  "covtype/tabular": {
+    "verdict": "PASS",
+    "rho": 0.51,
+    "rho_CI": [
+      0.345,
+      0.664
+    ],
+    "r_span": 79.2,
+    "r_max": 0.3011,
+    "d_noise_at_top_r": [
+      0.0301,
+      0.0138,
+      0.0473
+    ],
+    "cond1_monotone": true,
+    "cond2_bites_at_high_r": true,
+    "n_cells": 140
+  },
+  "_overall": "PASS",
+  "_n_pass": 2
+}

@@ -1,0 +1,25 @@
+  same-viseme 5 · other 15 (random seed 31) · n_train fixed 5333
+    [sv] D-N     base=0.580  d_noise -0.0060  d_shuffle -0.0057   [3s]
+    [sv] D-T     base=0.562  d_noise +0.0209  d_shuffle +0.0142   [6s]
+    [sv] N-T     base=0.609  d_noise +0.0171  d_shuffle +0.0044   [9s]
+    [sv] S-Z     base=0.575  d_noise +0.0102  d_shuffle +0.0221   [11s]
+    [ov] IY-S     base=0.825  d_noise +0.0454  d_shuffle +0.0096   [14s]
+    [ov] ER-N     base=0.668  d_noise +0.0100  d_shuffle -0.0162   [16s]
+    [ov] AO-S     base=0.915  d_noise +0.0084  d_shuffle -0.0029   [18s]
+    [ov] K-R     base=0.751  d_noise +0.0250  d_shuffle -0.0054   [20s]
+    [ov] AH-K     base=0.658  d_noise +0.0289  d_shuffle +0.0124   [23s]
+    [ov] EH-K     base=0.766  d_noise +0.0104  d_shuffle +0.0028   [25s]
+    [ov] IY-T     base=0.782  d_noise +0.0307  d_shuffle +0.0052   [28s]
+    [ov] T-V     base=0.819  d_noise +0.0325  d_shuffle -0.0155   [31s]
+    [ov] D-IY    base=0.751  d_noise +0.0144  d_shuffle -0.0111   [33s]
+    [ov] AH-AO    base=0.842  d_noise +0.0250  d_shuffle +0.0088   [35s]
+    [ov] EH-N     base=0.789  d_noise +0.0374  d_shuffle +0.0105   [37s]
+    [ov] L-S     base=0.852  d_noise +0.0455  d_shuffle -0.0053   [41s]
+  control d_shuffle [sv]: +0.0087 [-0.0008, +0.0182]
+  control d_shuffle [ov]: -0.0006 [-0.0063, +0.0048]
+
+  mean d_noise: same-viseme +0.0105 (n=4)   other +0.0261 (n=12)
+  D = other - same_viseme = +0.0156  CI [np.float64(0.0041), np.float64(0.0285)]  half-width 0.0122
+  CONFOUND rho(baseline acc, d_noise) over all 16 pairs = +0.453
+
+  VERDICT: DIFFERENCE

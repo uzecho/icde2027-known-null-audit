@@ -1,0 +1,18 @@
+  10 pairs with >= 7333 paired samples; n_train fixed at 5333
+    AA-AH    r=0.1611  d_noise +0.0177  d_shuffle +0.0008   [35s]
+    AA-IH    r=0.1610  d_noise +0.0441  d_shuffle -0.0072   [48s]
+    AA-N     r=0.1611  d_noise +0.0420  d_shuffle +0.0019   [55s]
+    AA-S     r=0.1611  d_noise +0.0082  d_shuffle -0.0079   [60s]
+    AA-T     r=0.1610  d_noise +0.0461  d_shuffle +0.0062   [65s]
+    AE-AH    r=0.1611  d_noise +0.0224  d_shuffle -0.0011   [81s]
+    AE-AY    r=0.1610  d_noise +0.0160  d_shuffle +0.0025   [87s]
+    AE-D     r=0.1611  d_noise +0.0284  d_shuffle -0.0076   [92s]
+    AE-IH    r=0.1611  d_noise +0.0230  d_shuffle +0.0032   [97s]
+    AE-IY    r=0.1611  d_noise +0.0257  d_shuffle +0.0037   [101s]
+
+  realised r         0.1611  (target 0.1611)
+  PREDICTED d_noise  [+0.0149, +0.0238]  (frozen, external only)
+  MEASURED  d_noise  +0.0274 [+0.0200, +0.0350] -> overlap True
+  control   d_shuffle -0.0006 [-0.0037, +0.0024] -> clean True
+
+  VERDICT: CONFIRMED   (10 pairs, 101s)

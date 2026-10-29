@@ -1,0 +1,23 @@
+
+  digits/vision  n_train=205  (target r ~0.30)
+    logistic  r=0.236  d_noise +0.0656 [0.0488, 0.0828]  d_shuffle +0.0091 [-0.0101, 0.028]  -> clears  [7s]
+    ridge     r=0.236  d_noise +0.0540 [0.0408, 0.0665]  d_shuffle +0.0160 [-0.003, 0.0351]  -> clears  [7s]
+    mlp       r=0.236  d_noise +0.0360 [0.0214, 0.0483]  d_shuffle -0.0130 [-0.0254, 0.001]  -> clears  [9s]
+    knn       r=0.236  d_noise -0.0548 [-0.0727, -0.0373]  d_shuffle +0.0158 [-0.0005, 0.0305]  -> no  [10s]
+
+  20news/text  n_train=408  (target r ~0.30)
+    logistic  r=0.238  d_noise +0.0087 [-0.0261, 0.0426]  d_shuffle -0.0079 [-0.0219, 0.0051]  -> no  [10s]
+    ridge     r=0.238  d_noise +0.0093 [-0.0241, 0.0429]  d_shuffle -0.0092 [-0.0237, 0.0057]  -> no  [11s]
+    mlp       r=0.238  d_noise +0.0005 [-0.0184, 0.0172]  d_shuffle +0.0015 [-0.0121, 0.0137]  -> no  [15s]
+    knn       r=0.238  d_noise -0.0324 [-0.0452, -0.0189]  d_shuffle -0.0022 [-0.0199, 0.0126]  -> no  [16s]
+
+  covtype/tabular  n_train=176  (target r ~0.30)
+    logistic  r=0.234  d_noise +0.0445 [0.0202, 0.0668]  d_shuffle -0.0013 [-0.0135, 0.0109]  -> clears  [17s]
+    ridge     r=0.234  d_noise +0.0516 [0.0337, 0.0677]  d_shuffle +0.0041 [-0.0094, 0.0179]  -> clears  [18s]
+    mlp       r=0.234  d_noise +0.0209 [0.0097, 0.0319]  d_shuffle +0.0092 [-0.0092, 0.0266]  -> clears  [20s]
+    knn       r=0.234  d_noise -0.0292 [-0.0403, -0.018]  d_shuffle -0.0016 [-0.0162, 0.0126]  -> no  [21s]
+
+  corpora cleared per readout: {'logistic': 2, 'ridge': 2, 'mlp': 2, 'knn': 0}
+  readouts clearing in >= 2 corpora: ['logistic', 'ridge', 'mlp']
+
+  VERDICT: SURVIVES

@@ -1,0 +1,176 @@
+{
+  "digits/vision": {
+    "linsvc": {
+      "d_noise": [
+        0.0754,
+        0.0591,
+        0.093
+      ],
+      "d_shuffle": [
+        0.0009,
+        -0.0151,
+        0.0153
+      ],
+      "matches_predicted_sign": true,
+      "control_clean": true
+    },
+    "mlp2": {
+      "d_noise": [
+        0.0497,
+        0.0375,
+        0.0627
+      ],
+      "d_shuffle": [
+        0.0061,
+        -0.0061,
+        0.0197
+      ],
+      "matches_predicted_sign": true,
+      "control_clean": true
+    },
+    "centroid": {
+      "d_noise": [
+        -0.0651,
+        -0.0927,
+        -0.0369
+      ],
+      "d_shuffle": [
+        -0.0106,
+        -0.0468,
+        0.0283
+      ],
+      "matches_predicted_sign": true,
+      "control_clean": true
+    },
+    "knn5": {
+      "d_noise": [
+        -0.0853,
+        -0.1074,
+        -0.0628
+      ],
+      "d_shuffle": [
+        0.0001,
+        -0.0109,
+        0.0121
+      ],
+      "matches_predicted_sign": true,
+      "control_clean": true
+    }
+  },
+  "20news/text": {
+    "linsvc": {
+      "d_noise": [
+        0.0066,
+        -0.0231,
+        0.0372
+      ],
+      "d_shuffle": [
+        -0.0108,
+        -0.0246,
+        0.0025
+      ],
+      "matches_predicted_sign": false,
+      "control_clean": true
+    },
+    "mlp2": {
+      "d_noise": [
+        -0.0175,
+        -0.0448,
+        0.0086
+      ],
+      "d_shuffle": [
+        -0.0017,
+        -0.023,
+        0.0196
+      ],
+      "matches_predicted_sign": false,
+      "control_clean": true
+    },
+    "centroid": {
+      "d_noise": [
+        -0.0722,
+        -0.1049,
+        -0.0386
+      ],
+      "d_shuffle": [
+        0.021,
+        0.0006,
+        0.0414
+      ],
+      "matches_predicted_sign": true,
+      "control_clean": false
+    },
+    "knn5": {
+      "d_noise": [
+        -0.0437,
+        -0.0614,
+        -0.0246
+      ],
+      "d_shuffle": [
+        -0.0051,
+        -0.018,
+        0.0087
+      ],
+      "matches_predicted_sign": true,
+      "control_clean": true
+    }
+  },
+  "covtype/tabular": {
+    "linsvc": {
+      "d_noise": [
+        0.0423,
+        0.0146,
+        0.0678
+      ],
+      "d_shuffle": [
+        0.0011,
+        -0.011,
+        0.0123
+      ],
+      "matches_predicted_sign": true,
+      "control_clean": true
+    },
+    "mlp2": {
+      "d_noise": [
+        -0.003,
+        -0.0229,
+        0.0174
+      ],
+      "d_shuffle": [
+        -0.0048,
+        -0.0257,
+        0.0165
+      ],
+      "matches_predicted_sign": false,
+      "control_clean": true
+    },
+    "centroid": {
+      "d_noise": [
+        -0.0462,
+        -0.0629,
+        -0.0279
+      ],
+      "d_shuffle": [
+        0.0085,
+        -0.0104,
+        0.027
+      ],
+      "matches_predicted_sign": true,
+      "control_clean": true
+    },
+    "knn5": {
+      "d_noise": [
+        -0.024,
+        -0.0425,
+        -0.0057
+      ],
+      "d_shuffle": [
+        0.0145,
+        -0.0017,
+        0.0307
+      ],
+      "matches_predicted_sign": true,
+      "control_clean": true
+    }
+  }
+}
