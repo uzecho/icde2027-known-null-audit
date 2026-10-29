@@ -46,17 +46,31 @@ interval spanning zero, never a reversal.
 This is a stronger pattern than the gate's PARTIAL conveys. It is reported here rather than
 used to upgrade the verdict, because the gate was written first and says 3/4 is PARTIAL.
 
-## A side observation worth a line in the paper
+## A side observation — CORRECTED 2026-10-29, the first version was cherry-picked
 
-The first version of the reachability selftest used labels independent of every feature,
-expecting no readout could show an artefact. **Two fitted readouts showed it anyway**
-(`linsvc` +0.0236 [+0.0124,+0.0341], `mlp2` +0.0148 [+0.0011,+0.0277]).
+**What this section said first, and why it was wrong.** It reported that on the selftest's
+unlearnable labels "two fitted readouts showed the artefact anyway" (`linsvc` +0.0236
+[+0.0124,+0.0341], `mlp2` +0.0148 [+0.0011,+0.0277]) and read that as support for the
+overfit-capacity mechanism. That reading took two cells from one of the selftest's two
+synthetic corpora and ignored the other six. The full table:
 
-That is consistent with the mechanism rather than against it: the artefact is about
-*overfitting capacity*, which does not require the labels to be learnable. A Gaussian block
-supplies more effectively independent directions to overfit than a real block does, whether
-or not there is any signal to find. It also means a practitioner cannot escape this by
-arguing their task is hard.
+| corpus | linsvc | mlp2 | centroid | knn5 |
+|---|---|---|---|---|
+| `unlearnable0` (d=48) | **+0.0236** | **+0.0148** | **+0.0346** | **+0.0361** |
+| `unlearnable1` (d=64) | **−0.0142** | **−0.0236** | **−0.0189** | −0.0064 (n.s.) |
+
+Bold = CI excludes 0. On corpus 0 **all four** readouts go positive, the two distance-based
+ones most strongly of all — the opposite of what the mechanism predicts for them. On corpus 1
+three of four reverse. The family→sign regularity is **absent** here.
+
+**The defensible statement is the opposite of the original one:** when the base carries no
+label information, `Δ_noise` is still non-zero but its sign is set by the particular draw,
+not by the readout family. That is consistent with a dilution account — with no signal there
+is nothing to dilute, so what remains is finite-sample geometry — and it means the selftest
+cannot be used to argue the artefact survives without learnable signal. n = 2 synthetic
+corpora; this is an observation from a reachability check, not a tested claim.
+
+This correction does not touch the verdict or any cell of the real run.
 
 ## Process notes
 

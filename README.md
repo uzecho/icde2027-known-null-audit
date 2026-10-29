@@ -16,8 +16,10 @@ Comparing a candidate feature block against a block of Gaussian noise does not
 merely add variance to your answer -- it biases it, and **the direction of the
 bias is set by your readout**. Every readout that fits weights reports an
 uninformative block as informative; every readout that measures distances
-reports it as actively harmful. The own-rows-shuffled null is correct in all 24
-cells measured.
+reports it as actively harmful. Of the 24 cells, 18 resolve, all 18 on the side
+their family implies and none against it. The own-rows-shuffled null is correct
+in 23 of the 24; the exception is nearest centroid on 20news and it is named in
+`experiments/C8_mechanism/FINDINGS.md`.
 
 ## Quick start
 

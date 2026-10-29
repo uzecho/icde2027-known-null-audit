@@ -24,8 +24,8 @@
       "bytes": 1882
     },
     "README.md": {
-      "sha256": "77d0a545dfd88eafb7a9b28f3e1e171408bb072d69a6bfa08b845969554e198d",
-      "bytes": 3832
+      "sha256": "1fb12c8622894e13f1ecbee550b60c77e962b5b31d0cabb9453df812f8b08091",
+      "bytes": 4016
     },
     "STOP_RULE.md": {
       "sha256": "ce378fd4e40728498ad9fcfb5a5c16d01ddd875dd8c9d592435edb38a28ef6b1",
@@ -176,8 +176,8 @@
       "bytes": 5662
     },
     "experiments/C8_mechanism/FINDINGS.md": {
-      "sha256": "6063223467ed97170a4635a008684b2ff270becde598e6ed9ee87d82c236c5e2",
-      "bytes": 4683
+      "sha256": "c18b574267b8e6d92eceefe4b394a7f9a826198ff25aba4d518f235d750e31a7",
+      "bytes": 5616
     },
     "experiments/C8_mechanism/PLAN.md": {
       "sha256": "6617bc3d8b6e90f67846004d8d71cd08691010de43ffcd63e8eec164e777f60f",
