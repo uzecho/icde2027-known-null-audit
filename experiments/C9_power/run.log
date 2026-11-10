@@ -1,0 +1,63 @@
+
+  digits/vision  n_train=205
+    logistic
+      p=0.00  gauss KEEP 10/10   shuffle KEEP 10/10   [10s]
+      p=0.25  gauss KEEP 10/10   shuffle KEEP 6/10   [15s]
+      p=0.50  gauss KEEP 10/10   shuffle KEEP 5/10   [21s]
+      p=0.75  gauss KEEP 10/10   shuffle KEEP 2/10   [27s]
+      p=1.00  gauss KEEP 10/10   shuffle KEEP 1/10   [31s]
+    knn5
+      p=0.00  gauss KEEP 10/10   shuffle KEEP 10/10   [32s]
+      p=0.25  gauss KEEP 10/10   shuffle KEEP 10/10   [33s]
+      p=0.50  gauss KEEP 8/10   shuffle KEEP 10/10   [34s]
+      p=0.75  gauss KEEP 0/10   shuffle KEEP 10/10   [35s]
+      p=1.00  gauss KEEP 0/10   shuffle KEEP 0/10   [36s]
+    rf
+      p=0.00  gauss KEEP 10/10   shuffle KEEP 10/10   [79s]
+      p=0.25  gauss KEEP 10/10   shuffle KEEP 10/10   [122s]
+      p=0.50  gauss KEEP 1/10   shuffle KEEP 6/10   [166s]
+      p=0.75  gauss KEEP 2/10   shuffle KEEP 2/10   [209s]
+      p=1.00  gauss KEEP 1/10   shuffle KEEP 3/10   [252s]
+
+  20news/text  n_train=408
+    logistic
+      p=0.00  gauss KEEP 10/10   shuffle KEEP 10/10   [260s]
+      p=0.25  gauss KEEP 10/10   shuffle KEEP 10/10   [269s]
+      p=0.50  gauss KEEP 10/10   shuffle KEEP 6/10   [276s]
+      p=0.75  gauss KEEP 8/10   shuffle KEEP 4/10   [284s]
+      p=1.00  gauss KEEP 6/10   shuffle KEEP 1/10   [294s]
+    knn5
+      p=0.00  gauss KEEP 10/10   shuffle KEEP 10/10   [298s]
+      p=0.25  gauss KEEP 10/10   shuffle KEEP 10/10   [302s]
+      p=0.50  gauss KEEP 9/10   shuffle KEEP 8/10   [307s]
+      p=0.75  gauss KEEP 3/10   shuffle KEEP 3/10   [311s]
+      p=1.00  gauss KEEP 0/10   shuffle KEEP 1/10   [315s]
+    rf
+      p=0.00  gauss KEEP 10/10   shuffle KEEP 10/10   [413s]
+      p=0.25  gauss KEEP 8/10   shuffle KEEP 9/10   [511s]
+      p=0.50  gauss KEEP 5/10   shuffle KEEP 6/10   [610s]
+      p=0.75  gauss KEEP 2/10   shuffle KEEP 3/10   [709s]
+      p=1.00  gauss KEEP 1/10   shuffle KEEP 1/10   [808s]
+
+  covtype/tabular  n_train=176
+    logistic
+      p=0.00  gauss KEEP 10/10   shuffle KEEP 10/10   [814s]
+      p=0.25  gauss KEEP 10/10   shuffle KEEP 9/10   [821s]
+      p=0.50  gauss KEEP 10/10   shuffle KEEP 6/10   [827s]
+      p=0.75  gauss KEEP 9/10   shuffle KEEP 1/10   [833s]
+      p=1.00  gauss KEEP 10/10   shuffle KEEP 3/10   [839s]
+    knn5
+      p=0.00  gauss KEEP 10/10   shuffle KEEP 10/10   [842s]
+      p=0.25  gauss KEEP 10/10   shuffle KEEP 10/10   [845s]
+      p=0.50  gauss KEEP 4/10   shuffle KEEP 8/10   [847s]
+      p=0.75  gauss KEEP 1/10   shuffle KEEP 3/10   [850s]
+      p=1.00  gauss KEEP 0/10   shuffle KEEP 0/10   [853s]
+    rf
+      p=0.00  gauss KEEP 10/10   shuffle KEEP 10/10   [894s]
+      p=0.25  gauss KEEP 10/10   shuffle KEEP 9/10   [935s]
+      p=0.50  gauss KEEP 9/10   shuffle KEEP 6/10   [978s]
+      p=0.75  gauss KEEP 4/10   shuffle KEEP 2/10   [1019s]
+      p=1.00  gauss KEEP 1/10   shuffle KEEP 1/10   [1061s]
+
+  VERDICT: INCONCLUSIVE
+  {"n_cells": 6, "voided": ["20news/text|knn5", "20news/text|rf", "digits/vision|knn5"], "shuffle_good": 4, "gauss_good": 3}

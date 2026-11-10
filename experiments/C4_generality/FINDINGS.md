@@ -36,23 +36,62 @@ everywhere: the artefact is 2.5× below the threshold on vision, 8× below on ta
 The gate was not softened and no secondary result was promoted. The threshold of +0.02 was
 chosen before any external data was loaded.
 
-## The result that matters more than the verdict
+## WITHDRAWN 2026-11-03: the secondary result was computed on the wrong rank
 
-**Rank spread does not predict the artefact.** covtype has the most extreme spread measured
-here — block effective rank 1.6–1.9 against a Gaussian 53.9, a ratio of **0.035** — and
-produces the *second smallest* effect, +0.0025. digits has a far milder spread (ratio
-0.10–0.21) and produces three times the effect. The ordering is backwards.
+This section previously read: *"Rank spread does not predict the artefact. covtype has the
+most extreme spread measured here … the ordering is backwards."* **That is withdrawn.**
 
-That matters because the catalogue's stated mechanism in `CLAUDE.md` is:
+`probelib.fit` z-scores every column on the train split before fitting, and the other
+readouts in `C7`/`C8` do the same via their own `_std`. Column scaling changes a
+participation ratio, so the rank the readout is handed is the **standardised** one. Both
+the ordering argument above and the VOID guard in `00_run.py` used the **raw** rank.
+Recomputed by `01_ranks.py` → `ranks.json`, over the identical blocks:
 
-> Gaussian noise. Effective rank differs ~100×, so "beats noise" only means "dilutes less".
+| corpus | ratio range, raw | ratio range, **standardised** | mean, raw | mean, **std** | Δ_noise |
+|---|---|---|---:|---:|---:|
+| digits | 0.104–0.213 | **0.100–0.327** | 0.157 | **0.195** | +0.0079 |
+| 20news | 0.036–0.186 | **0.009–0.998** | 0.108 | **0.373** | −0.0001 |
+| covtype | 0.029–0.035 | **0.040–0.701** | 0.033 | **0.261** | +0.0025 |
 
-These three datasets say rank spread alone is **not** sufficient to produce the artefact at
-a magnitude that would mislead anyone. Whatever drove the three false positives in `05` is
-not captured by "the effective ranks differ", or is not captured by it alone. The catalogue
-entry is still *correct advice* — own-rows-shuffled is a strictly safer null, and it came
-out clean in 2 of 3 domains — but the explanation attached to it is not supported outside
-LRS2 and should not be stated as a general mechanism.
+Two things follow.
+
+**1. The ordering claim does not survive.** By mean ratio, digits has the *largest* rank
+gap and the largest effect, 20news the smallest gap and no effect — the order the
+explanation predicts, i.e. the opposite of what was reported. By minimum ratio it reverses
+again. With three corpora of four blocks, no summary of rank spread is well determined and
+the conclusion flips with the choice. We withdraw the claim rather than keep whichever
+column supports it.
+
+**2. The VOID guard should have fired.** `VOID_RANK_FRAC = 0.25` requires every real block
+to sit below a quarter of its Gaussian comparator's rank. On the standardised measure:
+
+| corpus | offending block(s) | ratio |
+|---|---|---:|
+| digits | `raw` | 0.327 |
+| 20news | `raw`, `smoothed` | 0.998, 0.298 |
+| covtype | `raw` | 0.701 |
+
+**All three corpora would have voided.** The guard passed only because it measured a
+geometry no readout in this project ever saw. Its own docstring names the intended
+quantity — "the Gaussian comparator matches the real block in marginals and differs **only**
+in correlation structure" — and marginals match only *after* standardisation.
+
+The gate is **not** re-scored to VOID: a guard applied once the result is known is no longer
+a pre-registration. The discrepancy is reported instead, and this experiment is treated as
+adjudicating nothing about rank spread in either direction.
+
+**What survives untouched:** the FAIL verdict. It is a statement about magnitude — Δ_noise
+does not reach +0.02 in any corpus — and uses no rank measurement at all.
+
+**What is gained:** a measured mechanism for 20news. Its block standardises to effective
+rank **126.32** against the Gaussian comparator's **126.57** — 99.8%, no rank contrast
+whatsoever. 20news is the corpus that shows nothing in `C4`, `C6_ratio`, `C7` and `C8`, and
+this is a measured reason where there was a conjecture.
+
+**Not exposed to this error:** `r = eff_rank(G)/n_train`. It is taken over the *Gaussian*
+block, whose columns are already iid and on a common scale; standardising moves it by at
+most 0.2% (61.76→61.83, 126.55→126.57, 53.85→53.86). The quantity that moved is the ratio
+between a *real* block and its comparator, which `C6_ratio` does not use.
 
 ## A second, smaller self-correction
 
@@ -84,7 +123,9 @@ is not a gate.
 - **Does:** on three non-speech domains, with the project's own linear readout, the
   Gaussian-null artefact is either an order of magnitude smaller than on LRS2 or absent.
   C4's claim of "wide interest" — the EAB bar — is **not supported** for this entry.
-- **Does:** rank spread is not the mechanism, or not the whole mechanism.
+- **Does not:** say anything about rank spread. The secondary reading was withdrawn on
+  2026-11-03 (see above) because it, and the guard meant to protect it, were computed on
+  the pre-standardisation rank.
 - **Does not:** show the artefact is absent on LRS2. It was measured there and overturned
   three claims; that stands.
 - **Does not:** test the catalogue's other entries (mapping nulls, masking nulls, context

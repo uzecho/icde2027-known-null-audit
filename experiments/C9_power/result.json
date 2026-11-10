@@ -1,0 +1,312 @@
+{
+  "verdict": "INCONCLUSIVE",
+  "n_cells": 6,
+  "voided": [
+    "20news/text|knn5",
+    "20news/text|rf",
+    "digits/vision|knn5"
+  ],
+  "shuffle_good": 4,
+  "gauss_good": 3,
+  "per_cell": {
+    "digits/vision|logistic": {
+      "shuffle": {
+        "ok": true,
+        "fpr": 0.1,
+        "power": 1.0
+      },
+      "gauss": {
+        "ok": false,
+        "fpr": 1.0,
+        "power": 1.0
+      }
+    },
+    "digits/vision|rf": {
+      "shuffle": {
+        "ok": false,
+        "fpr": 0.3,
+        "power": 1.0
+      },
+      "gauss": {
+        "ok": true,
+        "fpr": 0.1,
+        "power": 1.0
+      }
+    },
+    "20news/text|logistic": {
+      "shuffle": {
+        "ok": true,
+        "fpr": 0.1,
+        "power": 1.0
+      },
+      "gauss": {
+        "ok": false,
+        "fpr": 0.6,
+        "power": 1.0
+      }
+    },
+    "covtype/tabular|logistic": {
+      "shuffle": {
+        "ok": false,
+        "fpr": 0.3,
+        "power": 1.0
+      },
+      "gauss": {
+        "ok": false,
+        "fpr": 1.0,
+        "power": 1.0
+      }
+    },
+    "covtype/tabular|knn5": {
+      "shuffle": {
+        "ok": true,
+        "fpr": 0.0,
+        "power": 1.0
+      },
+      "gauss": {
+        "ok": true,
+        "fpr": 0.0,
+        "power": 1.0
+      }
+    },
+    "covtype/tabular|rf": {
+      "shuffle": {
+        "ok": true,
+        "fpr": 0.1,
+        "power": 1.0
+      },
+      "gauss": {
+        "ok": true,
+        "fpr": 0.1,
+        "power": 1.0
+      }
+    }
+  },
+  "cells": {
+    "digits/vision|logistic": {
+      "p": {
+        "0.00": {
+          "gauss_keep": 1.0,
+          "shuffle_keep": 1.0
+        },
+        "0.25": {
+          "gauss_keep": 1.0,
+          "shuffle_keep": 0.6
+        },
+        "0.50": {
+          "gauss_keep": 1.0,
+          "shuffle_keep": 0.5
+        },
+        "0.75": {
+          "gauss_keep": 1.0,
+          "shuffle_keep": 0.2
+        },
+        "1.00": {
+          "gauss_keep": 1.0,
+          "shuffle_keep": 0.1
+        }
+      },
+      "signal_at_p0": 0.01058762768904368
+    },
+    "digits/vision|knn5": {
+      "p": {
+        "0.00": {
+          "gauss_keep": 1.0,
+          "shuffle_keep": 1.0
+        },
+        "0.25": {
+          "gauss_keep": 1.0,
+          "shuffle_keep": 1.0
+        },
+        "0.50": {
+          "gauss_keep": 0.8,
+          "shuffle_keep": 1.0
+        },
+        "0.75": {
+          "gauss_keep": 0.0,
+          "shuffle_keep": 1.0
+        },
+        "1.00": {
+          "gauss_keep": 0.0,
+          "shuffle_keep": 0.0
+        }
+      },
+      "signal_at_p0": -0.00032875326878778477
+    },
+    "digits/vision|rf": {
+      "p": {
+        "0.00": {
+          "gauss_keep": 1.0,
+          "shuffle_keep": 1.0
+        },
+        "0.25": {
+          "gauss_keep": 1.0,
+          "shuffle_keep": 1.0
+        },
+        "0.50": {
+          "gauss_keep": 0.1,
+          "shuffle_keep": 0.6
+        },
+        "0.75": {
+          "gauss_keep": 0.2,
+          "shuffle_keep": 0.2
+        },
+        "1.00": {
+          "gauss_keep": 0.1,
+          "shuffle_keep": 0.3
+        }
+      },
+      "signal_at_p0": 0.027965820652031476
+    },
+    "20news/text|logistic": {
+      "p": {
+        "0.00": {
+          "gauss_keep": 1.0,
+          "shuffle_keep": 1.0
+        },
+        "0.25": {
+          "gauss_keep": 1.0,
+          "shuffle_keep": 1.0
+        },
+        "0.50": {
+          "gauss_keep": 1.0,
+          "shuffle_keep": 0.6
+        },
+        "0.75": {
+          "gauss_keep": 0.8,
+          "shuffle_keep": 0.4
+        },
+        "1.00": {
+          "gauss_keep": 0.6,
+          "shuffle_keep": 0.1
+        }
+      },
+      "signal_at_p0": 0.03450188289086024
+    },
+    "20news/text|knn5": {
+      "p": {
+        "0.00": {
+          "gauss_keep": 1.0,
+          "shuffle_keep": 1.0
+        },
+        "0.25": {
+          "gauss_keep": 1.0,
+          "shuffle_keep": 1.0
+        },
+        "0.50": {
+          "gauss_keep": 0.9,
+          "shuffle_keep": 0.8
+        },
+        "0.75": {
+          "gauss_keep": 0.3,
+          "shuffle_keep": 0.3
+        },
+        "1.00": {
+          "gauss_keep": 0.0,
+          "shuffle_keep": 0.1
+        }
+      },
+      "signal_at_p0": -0.01205414613398569
+    },
+    "20news/text|rf": {
+      "p": {
+        "0.00": {
+          "gauss_keep": 1.0,
+          "shuffle_keep": 1.0
+        },
+        "0.25": {
+          "gauss_keep": 0.8,
+          "shuffle_keep": 0.9
+        },
+        "0.50": {
+          "gauss_keep": 0.5,
+          "shuffle_keep": 0.6
+        },
+        "0.75": {
+          "gauss_keep": 0.2,
+          "shuffle_keep": 0.3
+        },
+        "1.00": {
+          "gauss_keep": 0.1,
+          "shuffle_keep": 0.1
+        }
+      },
+      "signal_at_p0": 0.000742128457657476
+    },
+    "covtype/tabular|logistic": {
+      "p": {
+        "0.00": {
+          "gauss_keep": 1.0,
+          "shuffle_keep": 1.0
+        },
+        "0.25": {
+          "gauss_keep": 1.0,
+          "shuffle_keep": 0.9
+        },
+        "0.50": {
+          "gauss_keep": 1.0,
+          "shuffle_keep": 0.6
+        },
+        "0.75": {
+          "gauss_keep": 0.9,
+          "shuffle_keep": 0.1
+        },
+        "1.00": {
+          "gauss_keep": 1.0,
+          "shuffle_keep": 0.3
+        }
+      },
+      "signal_at_p0": 0.02830362816651662
+    },
+    "covtype/tabular|knn5": {
+      "p": {
+        "0.00": {
+          "gauss_keep": 1.0,
+          "shuffle_keep": 1.0
+        },
+        "0.25": {
+          "gauss_keep": 1.0,
+          "shuffle_keep": 1.0
+        },
+        "0.50": {
+          "gauss_keep": 0.4,
+          "shuffle_keep": 0.8
+        },
+        "0.75": {
+          "gauss_keep": 0.1,
+          "shuffle_keep": 0.3
+        },
+        "1.00": {
+          "gauss_keep": 0.0,
+          "shuffle_keep": 0.0
+        }
+      },
+      "signal_at_p0": 0.0280991159476356
+    },
+    "covtype/tabular|rf": {
+      "p": {
+        "0.00": {
+          "gauss_keep": 1.0,
+          "shuffle_keep": 1.0
+        },
+        "0.25": {
+          "gauss_keep": 1.0,
+          "shuffle_keep": 0.9
+        },
+        "0.50": {
+          "gauss_keep": 0.9,
+          "shuffle_keep": 0.6
+        },
+        "0.75": {
+          "gauss_keep": 0.4,
+          "shuffle_keep": 0.2
+        },
+        "1.00": {
+          "gauss_keep": 0.1,
+          "shuffle_keep": 0.1
+        }
+      },
+      "signal_at_p0": 0.025001795018228922
+    }
+  }
+}

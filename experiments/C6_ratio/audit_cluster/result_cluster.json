@@ -1,0 +1,126 @@
+{
+  "note": "Section V re-aggregated with a cluster bootstrap over (n_train, seed). Same design and seeds as the published sweep; only the interval estimator differs. Units: FRACTIONS.",
+  "n_boot": 2000,
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "per_corpus": {
+    "digits/vision": {
+      "n_cells": 140,
+      "n_clusters": 35,
+      "rho_d_noise": [
+        0.6259171724860946,
+        0.42555131478763564,
+        0.7583828829327501
+      ],
+      "rho_d_shuffle": [
+        -0.052238458790206596,
+        -0.29862652455686794,
+        0.2304239474375022
+      ],
+      "d_noise_at_top_r": [
+        0.058913541957736015,
+        0.04050951823592186,
+        0.07731756567955017
+      ],
+      "d_shuffle_at_top_r": [
+        0.007078930735588074,
+        -0.007367424666881561,
+        0.02152528613805771
+      ],
+      "n_top_clusters": 4,
+      "cond1_monotone": true,
+      "cond2_bites_at_high_r": true,
+      "verdict_clustered": "PASS",
+      "replication": {
+        "rho": [
+          0.3839049659684464,
+          0.07550767580419844,
+          0.6241185949944855
+        ],
+        "d_noise_at_top_r": [
+          0.040922608226537704,
+          0.006652364507317543,
+          0.0663455631583929
+        ],
+        "n_top_clusters": 4,
+        "verdict": "NOT REPLICATED"
+      }
+    },
+    "20news/text": {
+      "n_cells": 140,
+      "n_clusters": 35,
+      "rho_d_noise": [
+        0.18653571975089545,
+        -0.06066245229929365,
+        0.41938449739863987
+      ],
+      "rho_d_shuffle": [
+        -0.03605062226164223,
+        -0.26167013346653956,
+        0.17606365267138274
+      ],
+      "d_noise_at_top_r": [
+        0.01888231188058853,
+        -0.00882687047123909,
+        0.04659149423241615
+      ],
+      "d_shuffle_at_top_r": [
+        0.0021665245294570923,
+        -0.007439138367772102,
+        0.013568146154284477
+      ],
+      "n_top_clusters": 4,
+      "cond1_monotone": false,
+      "cond2_bites_at_high_r": false,
+      "verdict_clustered": "FAIL"
+    },
+    "covtype/tabular": {
+      "n_cells": 140,
+      "n_clusters": 35,
+      "rho_d_noise": [
+        0.5090346256037199,
+        0.23542778976992437,
+        0.7350884501761827
+      ],
+      "rho_d_shuffle": [
+        -0.07574130735358621,
+        -0.3427215348152185,
+        0.23542444623813688
+      ],
+      "d_noise_at_top_r": [
+        0.030122103169560432,
+        0.021152446046471596,
+        0.03909176029264927
+      ],
+      "d_shuffle_at_top_r": [
+        -0.012726801447570324,
+        -0.034865533001720905,
+        0.013348642736673355
+      ],
+      "n_top_clusters": 4,
+      "cond1_monotone": true,
+      "cond2_bites_at_high_r": true,
+      "verdict_clustered": "PASS",
+      "replication": {
+        "rho": [
+          0.40035572361622285,
+          0.054350341722121165,
+          0.6712683538545493
+        ],
+        "d_noise_at_top_r": [
+          0.03408500086516142,
+          -0.008409052155911922,
+          0.05652068927884102
+        ],
+        "n_top_clusters": 4,
+        "verdict": "NOT REPLICATED"
+      }
+    }
+  },
+  "wall_s": 381.4
+}

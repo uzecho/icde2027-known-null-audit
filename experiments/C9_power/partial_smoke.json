@@ -1,0 +1,15 @@
+{
+  "digits/vision|rf": {
+    "p": {
+      "0.00": {
+        "gauss_keep": 1.0,
+        "shuffle_keep": 1.0
+      },
+      "1.00": {
+        "gauss_keep": 0.0,
+        "shuffle_keep": 0.0
+      }
+    },
+    "signal_at_p0": 0.027965820652031476
+  }
+}

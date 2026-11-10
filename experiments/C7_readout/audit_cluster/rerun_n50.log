@@ -1,0 +1,43 @@
+  digits/vision: n_train=205  readouts=8  seeds=50
+  20news/text: n_train=408  readouts=8  seeds=50
+  covtype/tabular: n_train=176  readouts=8  seeds=50
+
+  running 24 cells on 3 workers x 8 threads ...
+[Parallel(n_jobs=3)]: Using backend LokyBackend with 3 concurrent workers.
+[Parallel(n_jobs=3)]: Done  12 tasks      | elapsed:  1.2min
+[Parallel(n_jobs=3)]: Done  24 out of  24 | elapsed:  3.0min finished
+
+  GATE A ok: all 24 cells reproduce Table II on seeds 0-2 (tol 0.06 pts)
+
+  corpus           readout         published (3 seeds)      15 seeds, clustered
+  digits/vision    logistic       +6.6                   +4.76 [ +4.02, +5.52]  R
+  digits/vision    ridge          +5.4                   +3.38 [ +2.71, +4.11]  R
+  digits/vision    mlp            +3.6                   +2.79 [ +2.07, +3.49]  R
+  digits/vision    linsvc         +7.5                   +5.23 [ +4.44, +6.01]  R
+  digits/vision    mlp2           +5.0                   +3.09 [ +2.39, +3.81]  R
+  digits/vision    knn            -5.5                  -10.89 [-11.80, -9.97]  R
+  digits/vision    knn5           -8.5                  -10.59 [-11.35, -9.83]  R
+  digits/vision    centroid       -6.5                   -9.31 [-10.42, -8.24]  R
+  20news/text      logistic       +0.9                   +2.69 [ +1.92, +3.43]  R
+  20news/text      ridge          +0.9                   +2.13 [ +1.39, +2.87]  R
+  20news/text      mlp            +0.1                   +1.68 [ +0.90, +2.45]  R
+  20news/text      linsvc         +0.7                   +2.39 [ +1.56, +3.21]  R
+  20news/text      mlp2           -1.8                   +1.17 [ +0.53, +1.76]  R
+  20news/text      knn            -3.2                   -1.33 [ -1.99, -0.63]  R
+  20news/text      knn5           -4.4                   -0.20 [ -0.97, +0.58]  .
+  20news/text      centroid       -7.2                   -4.91 [ -5.76, -4.08]  R
+  covtype/tabular  logistic       +4.5                   +4.24 [ +3.48, +5.01]  R
+  covtype/tabular  ridge          +5.2                   +4.05 [ +3.31, +4.80]  R
+  covtype/tabular  mlp            +2.1                   +2.33 [ +1.49, +3.16]  R
+  covtype/tabular  linsvc         +4.2                   +4.76 [ +3.84, +5.69]  R
+  covtype/tabular  mlp2           -0.3                   +1.36 [ +0.62, +2.09]  R
+  covtype/tabular  knn            -2.9                   -2.26 [ -2.98, -1.53]  R
+  covtype/tabular  knn5           -2.4                   -1.45 [ -2.32, -0.59]  R
+  covtype/tabular  centroid       -4.6                   -3.25 [ -4.01, -2.48]  R
+
+  resolving at 15 seeds: naive 23/24   clustered 23/24
+  resolving AGAINST family (clustered): none
+  distance-based cells resolving negative: 8/9
+  own-shuffle control cells excluding zero: 1/24 ['covtype/tabular/knn5']
+
+  -> rerun_n50.json, table2_clustered_n50.tex   (187 s)

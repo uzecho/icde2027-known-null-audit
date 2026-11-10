@@ -1,0 +1,33 @@
+
+  digits/vision
+    digits/vision: 140 cells in 35 clusters, r 0.0490 .. 0.5943
+    GATE A ok (rho and top-r reproduce)
+    rho(r,d_noise)    +0.626 [+0.426,+0.758]   cond1(monotone) True
+    d_noise at top r  +5.89 [+4.05,+7.73] pts over 4 clusters   cond2 True
+    rho(r,d_shuffle)  -0.052 [-0.299,+0.230]   <- the control
+    d_shuf at top r   +0.71 [-0.74,+2.15] pts
+    VERDICT (clustered): PASS
+    digits/vision/replication: 140 cells in 35 clusters, r 0.0946 .. 1.1502
+    replication: rho +0.384 [+0.076,+0.624], top-r +4.09 [+0.67,+6.63] pts -> NOT REPLICATED
+
+  20news/text
+    20news/text: 140 cells in 35 clusters, r 0.0156 .. 0.3003
+    GATE A ok (rho and top-r reproduce)
+    rho(r,d_noise)    +0.187 [-0.061,+0.419]   cond1(monotone) False
+    d_noise at top r  +1.89 [-0.88,+4.66] pts over 4 clusters   cond2 False
+    rho(r,d_shuffle)  -0.036 [-0.262,+0.176]   <- the control
+    d_shuf at top r   +0.22 [-0.74,+1.36] pts
+    VERDICT (clustered): FAIL
+
+  covtype/tabular
+    covtype/tabular: 140 cells in 35 clusters, r 0.0038 .. 0.3011
+    GATE A ok (rho and top-r reproduce)
+    rho(r,d_noise)    +0.509 [+0.235,+0.735]   cond1(monotone) True
+    d_noise at top r  +3.01 [+2.12,+3.91] pts over 4 clusters   cond2 True
+    rho(r,d_shuffle)  -0.076 [-0.343,+0.235]   <- the control
+    d_shuf at top r   -1.27 [-3.49,+1.33] pts
+    VERDICT (clustered): PASS
+    covtype/tabular/replication: 140 cells in 35 clusters, r 0.0076 .. 0.3011
+    replication: rho +0.400 [+0.054,+0.671], top-r +3.41 [-0.84,+5.65] pts -> NOT REPLICATED
+
+  -> result_cluster.json   (381 s)

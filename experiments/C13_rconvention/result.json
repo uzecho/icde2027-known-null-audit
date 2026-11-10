@@ -1,0 +1,80 @@
+{
+  "note": "A3 defect repair. Delta values unchanged; only the abscissa convention differs. Units: POINTS for Delta, dimensionless r.",
+  "points": [
+    {
+      "name": "C4 digits/vision",
+      "d": 64,
+      "n_train": 1257,
+      "r_as_used": 0.04904344887117789,
+      "r_at_n_train": 0.04850778110130939,
+      "d_noise": 0.79
+    },
+    {
+      "name": "C4 20news/text",
+      "d": 128,
+      "n_train": 7919,
+      "r_as_used": 0.01565988844977634,
+      "r_at_n_train": 0.015906695580895525,
+      "d_noise": -0.01
+    },
+    {
+      "name": "C4 covtype/tabular",
+      "d": 54,
+      "n_train": 14000,
+      "r_as_used": 0.0038059781298713648,
+      "r_at_n_train": 0.0038417017507318876,
+      "d_noise": 0.25
+    },
+    {
+      "name": "C6 top-r digits/vision",
+      "d": 64,
+      "n_train": 104,
+      "r_as_used": 0.5927655310679867,
+      "r_at_n_train": 0.3798024350501924,
+      "d_noise": 5.8913541957736015
+    },
+    {
+      "name": "C6 top-r covtype/tabular",
+      "d": 54,
+      "n_train": 177,
+      "r_as_used": 0.3009619854375748,
+      "r_at_n_train": 0.23132391517298348,
+      "d_noise": 3.0122103169560432
+    }
+  ],
+  "fit_mixed": {
+    "slope": 9.738901499461402,
+    "intercept": 0.11248695743051904,
+    "resid_sd": 0.2054936767511904,
+    "lrs2_pred": 1.6814239889937508
+  },
+  "fit_unified": {
+    "slope": 15.024908423173107,
+    "intercept": -0.0548191529264446,
+    "resid_sd": 0.3349669286188462,
+    "lrs2_pred": 2.3656935940467427
+  },
+  "lrs2_r": 0.1611,
+  "paper_checks": {
+    "slope_unified": [
+      15.024908423173107,
+      13.824908423173108,
+      16.224908423173108
+    ],
+    "resid_sd_unified": [
+      0.3349669286188462,
+      0.2549669286188462,
+      0.4149669286188462
+    ],
+    "lrs2_pred_unified": [
+      2.3656935940467427,
+      2.065693594046743,
+      2.6656935940467426
+    ],
+    "slope_mixed": [
+      9.738901499461402,
+      9.138901499461403,
+      10.338901499461402
+    ]
+  }
+}

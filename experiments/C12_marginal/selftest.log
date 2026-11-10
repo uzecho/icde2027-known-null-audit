@@ -1,0 +1,14 @@
+
+  PLAN.md §6: branch reachability.
+
+    marginal  -> VOID                       expected MARGINALS EXPLAIN          MISS
+       synthA|knn5      cov  -1.76  marg  -0.33 [ -0.99, +0.33]  ks 0.000  drift 0.283
+       synthB|knn5      cov  -1.12  marg  +0.16 [ -0.68, +1.03]  ks 0.000  drift 0.275
+       synthC|knn5      cov  -1.56  marg  -0.46 [ -1.36, +0.41]  ks 0.000  drift 0.311
+    copula    -> VOID                       expected MARGINALS DO NOT EXPLAIN   MISS
+       synthA|knn5      cov  -1.47  marg  -0.51 [ -1.09, +0.18]  ks 0.000  drift 0.259
+       synthB|knn5      cov  -0.88  marg  +0.15 [ -0.52, +0.80]  ks 0.000  drift 0.258
+       synthC|knn5      cov  -1.88  marg  -1.52 [ -2.37, -0.71]  ks 0.000  drift 0.259
+
+  REACHABILITY CHECK FAILED. Halting before the real run.
+

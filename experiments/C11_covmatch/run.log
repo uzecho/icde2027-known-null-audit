@@ -1,0 +1,14 @@
+  digits/vision: n_train=205
+    logistic  noise  +4.76  cov  -0.42 [ -1.12, +0.28]  rank  +5.18 [ +4.35, +6.04]
+    knn5      noise -10.59  cov  -4.79 [ -5.39, -4.20]  rank  -5.79 [ -6.52, -5.04]
+  20news/text: n_train=408
+    logistic  noise  +2.69  cov  +0.20 [ -0.39, +0.80]  rank  +2.49 [ +1.81, +3.15]
+    knn5      noise  -0.20  cov  -0.30 [ -0.84, +0.24]  rank  +0.10 [ -0.66, +0.84]
+  covtype/tabular: n_train=176
+    logistic  noise  +4.25  cov  +0.05 [ -0.59, +0.68]  rank  +4.20 [ +3.50, +4.93]
+    knn5      noise  -1.45  cov  -0.75 [ -1.38, -0.14]  rank  -0.70 [ -1.56, +0.18]
+
+  GATE A ok: d_noise reproduces all 6 cells (tol 0.25 pts)
+
+  VERDICT: MIXED   (supported 3/6, refuted 1/6, need 4)
+  -> result.json   (76 s)

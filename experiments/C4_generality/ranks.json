@@ -1,0 +1,167 @@
+{
+  "digits/vision": {
+    "blocks": {
+      "raw": {
+        "er_raw": 13.17,
+        "er_gauss_raw": 61.76,
+        "ratio_raw": 0.2132,
+        "er_std": 20.23,
+        "er_gauss_std": 61.83,
+        "ratio_std": 0.3271,
+        "nominal_width": 64
+      },
+      "randproj": {
+        "er_raw": 11.44,
+        "er_gauss_raw": 61.76,
+        "ratio_raw": 0.1852,
+        "er_std": 13.15,
+        "er_gauss_std": 61.83,
+        "ratio_std": 0.2126,
+        "nominal_width": 64
+      },
+      "smoothed": {
+        "er_raw": 7.63,
+        "er_gauss_raw": 61.76,
+        "ratio_raw": 0.1236,
+        "er_std": 8.62,
+        "er_gauss_std": 61.83,
+        "ratio_std": 0.1394,
+        "nominal_width": 64
+      },
+      "pca_recon": {
+        "er_raw": 6.43,
+        "er_gauss_raw": 61.76,
+        "ratio_raw": 0.1041,
+        "er_std": 6.17,
+        "er_gauss_std": 61.83,
+        "ratio_std": 0.0998,
+        "nominal_width": 64
+      }
+    },
+    "void_frac": 0.25,
+    "ratio_raw_range": [
+      0.1041,
+      0.2132
+    ],
+    "ratio_std_range": [
+      0.0998,
+      0.3271
+    ],
+    "guard_raw": "pass",
+    "guard_std": "VOID",
+    "guard_std_offenders": [
+      "raw"
+    ]
+  },
+  "20news/text": {
+    "blocks": {
+      "raw": {
+        "er_raw": 23.49,
+        "er_gauss_raw": 126.55,
+        "ratio_raw": 0.1856,
+        "er_std": 126.32,
+        "er_gauss_std": 126.57,
+        "ratio_std": 0.998,
+        "nominal_width": 128
+      },
+      "randproj": {
+        "er_raw": 19.73,
+        "er_gauss_raw": 126.55,
+        "ratio_raw": 0.1559,
+        "er_std": 23.49,
+        "er_gauss_std": 126.57,
+        "ratio_std": 0.1856,
+        "nominal_width": 128
+      },
+      "smoothed": {
+        "er_raw": 7.09,
+        "er_gauss_raw": 126.55,
+        "ratio_raw": 0.056,
+        "er_std": 37.71,
+        "er_gauss_std": 126.57,
+        "ratio_std": 0.298,
+        "nominal_width": 128
+      },
+      "pca_recon": {
+        "er_raw": 4.58,
+        "er_gauss_raw": 126.55,
+        "ratio_raw": 0.0362,
+        "er_std": 1.14,
+        "er_gauss_std": 126.57,
+        "ratio_std": 0.009,
+        "nominal_width": 128
+      }
+    },
+    "void_frac": 0.25,
+    "ratio_raw_range": [
+      0.0362,
+      0.1856
+    ],
+    "ratio_std_range": [
+      0.009,
+      0.998
+    ],
+    "guard_raw": "pass",
+    "guard_std": "VOID",
+    "guard_std_offenders": [
+      "raw",
+      "smoothed"
+    ]
+  },
+  "covtype/tabular": {
+    "blocks": {
+      "raw": {
+        "er_raw": 1.87,
+        "er_gauss_raw": 53.85,
+        "ratio_raw": 0.0348,
+        "er_std": 37.74,
+        "er_gauss_std": 53.86,
+        "ratio_std": 0.7008,
+        "nominal_width": 54
+      },
+      "randproj": {
+        "er_raw": 1.57,
+        "er_gauss_raw": 53.85,
+        "ratio_raw": 0.0291,
+        "er_std": 2.14,
+        "er_gauss_std": 53.86,
+        "ratio_std": 0.0398,
+        "nominal_width": 54
+      },
+      "smoothed": {
+        "er_raw": 1.67,
+        "er_gauss_raw": 53.85,
+        "ratio_raw": 0.0311,
+        "er_std": 11.28,
+        "er_gauss_std": 53.86,
+        "ratio_std": 0.2095,
+        "nominal_width": 54
+      },
+      "pca_recon": {
+        "er_raw": 1.87,
+        "er_gauss_raw": 53.85,
+        "ratio_raw": 0.0348,
+        "er_std": 4.99,
+        "er_gauss_std": 53.86,
+        "ratio_std": 0.0927,
+        "nominal_width": 54
+      }
+    },
+    "void_frac": 0.25,
+    "ratio_raw_range": [
+      0.0291,
+      0.0348
+    ],
+    "ratio_std_range": [
+      0.0398,
+      0.7008
+    ],
+    "guard_raw": "pass",
+    "guard_std": "VOID",
+    "guard_std_offenders": [
+      "raw"
+    ]
+  },
+  "_note": "Descriptive re-measurement of C4's blocks. No probe was re-run and no verdict was recomputed. guard_std is what PLAN.md 5's non-degeneracy guard would have decided had it been applied to the standardised rank, which is the geometry probelib.fit hands the readout.",
+  "_any_guard_std_void": true
+}

@@ -1,0 +1,150 @@
+{
+ "digits/vision": {
+  "raw": {
+   "n_rows": 1000,
+   "n_cols": 64,
+   "mean_distinct_values_per_col": 13.64,
+   "mean_skew": 4.507,
+   "mean_excess_kurtosis": 102.833,
+   "n_constant_cols": 3
+  },
+  "randproj": {
+   "n_rows": 1000,
+   "n_cols": 64,
+   "mean_distinct_values_per_col": 1000.0,
+   "mean_skew": 0.024,
+   "mean_excess_kurtosis": -0.222,
+   "n_constant_cols": 0
+  },
+  "smoothed": {
+   "n_rows": 1000,
+   "n_cols": 64,
+   "mean_distinct_values_per_col": 83.05,
+   "mean_skew": 0.239,
+   "mean_excess_kurtosis": -0.329,
+   "n_constant_cols": 0
+  },
+  "pca_recon": {
+   "n_rows": 1000,
+   "n_cols": 64,
+   "mean_distinct_values_per_col": 984.38,
+   "mean_skew": 0.035,
+   "mean_excess_kurtosis": -0.512,
+   "n_constant_cols": 3
+  },
+  "GAUSSIAN": {
+   "n_rows": 1000,
+   "n_cols": 64,
+   "mean_distinct_values_per_col": 1000.0,
+   "mean_skew": -0.009,
+   "mean_excess_kurtosis": 0.014,
+   "n_constant_cols": 0
+  }
+ },
+ "20news/text": {
+  "raw": {
+   "n_rows": 1000,
+   "n_cols": 128,
+   "mean_distinct_values_per_col": 999.97,
+   "mean_skew": 0.396,
+   "mean_excess_kurtosis": 6.654,
+   "n_constant_cols": 0
+  },
+  "randproj": {
+   "n_rows": 1000,
+   "n_cols": 128,
+   "mean_distinct_values_per_col": 1000.0,
+   "mean_skew": -0.01,
+   "mean_excess_kurtosis": 0.212,
+   "n_constant_cols": 0
+  },
+  "smoothed": {
+   "n_rows": 1000,
+   "n_cols": 128,
+   "mean_distinct_values_per_col": 999.98,
+   "mean_skew": 0.572,
+   "mean_excess_kurtosis": 8.776,
+   "n_constant_cols": 0
+  },
+  "pca_recon": {
+   "n_rows": 1000,
+   "n_cols": 128,
+   "mean_distinct_values_per_col": 999.99,
+   "mean_skew": 0.04,
+   "mean_excess_kurtosis": -0.108,
+   "n_constant_cols": 0
+  },
+  "GAUSSIAN": {
+   "n_rows": 1000,
+   "n_cols": 128,
+   "mean_distinct_values_per_col": 1000.0,
+   "mean_skew": -0.001,
+   "mean_excess_kurtosis": 0.0,
+   "n_constant_cols": 0
+  }
+ },
+ "covtype/tabular": {
+  "raw": {
+   "n_rows": 1000,
+   "n_cols": 54,
+   "mean_distinct_values_per_col": 64.57,
+   "mean_skew": 8.527,
+   "mean_excess_kurtosis": 154.661,
+   "n_constant_cols": 6
+  },
+  "randproj": {
+   "n_rows": 1000,
+   "n_cols": 54,
+   "mean_distinct_values_per_col": 1000.0,
+   "mean_skew": -0.169,
+   "mean_excess_kurtosis": 0.287,
+   "n_constant_cols": 0
+  },
+  "smoothed": {
+   "n_rows": 1000,
+   "n_cols": 54,
+   "mean_distinct_values_per_col": 198.09,
+   "mean_skew": 2.7,
+   "mean_excess_kurtosis": 11.777,
+   "n_constant_cols": 0
+  },
+  "pca_recon": {
+   "n_rows": 1000,
+   "n_cols": 54,
+   "mean_distinct_values_per_col": 981.26,
+   "mean_skew": 0.376,
+   "mean_excess_kurtosis": 1.127,
+   "n_constant_cols": 1
+  },
+  "GAUSSIAN": {
+   "n_rows": 1000,
+   "n_cols": 54,
+   "mean_distinct_values_per_col": 1000.0,
+   "mean_skew": -0.004,
+   "mean_excess_kurtosis": -0.021,
+   "n_constant_cols": 0
+  }
+ },
+ "paper_checks": {
+  "digits_raw_distinct_per_col": [
+   13.64,
+   13.440000000000001,
+   13.84
+  ],
+  "max_mean_skew": [
+   8.527,
+   8.327,
+   8.726999999999999
+  ],
+  "max_mean_excess_kurtosis": [
+   154.661,
+   152.661,
+   156.661
+  ],
+  "max_constant_cols": [
+   6,
+   5.5,
+   6.5
+  ]
+ }
+}

@@ -1,0 +1,14 @@
+  digits/vision: n_train=205  (NORTA solved for 4 blocks)
+    logistic  noise  +4.76  cov  -0.44  marg  +0.33 [ -0.20, +0.88]   ks 0.000 drift 0.096
+    knn5      noise -10.59  cov  -4.74  marg  -3.71 [ -4.44, -2.97]   ks 0.000 drift 0.096
+  20news/text: n_train=408  (NORTA solved for 4 blocks)
+    logistic  noise  +2.69  cov  +0.21  marg  +0.25 [ -0.36, +0.87]   ks 0.000 drift 0.092
+    knn5      noise  -0.20  cov  -0.30  marg  +0.26 [ -0.24, +0.76]   ks 0.000 drift 0.092
+  covtype/tabular: n_train=176  (NORTA solved for 4 blocks)
+    logistic  noise  +4.24  cov  +0.04  marg  +0.41 [ -0.16, +0.99]   ks 0.000 drift 0.127
+    knn5      noise  -1.45  cov  -0.75  marg  -1.45 [ -2.18, -0.73]   ks 0.000 drift 0.127
+
+  GATE A ok: d_noise and d_cov both reproduce (tol 0.25 pts)
+
+  VERDICT: MARGINALS DO NOT EXPLAIN   (explain 1/3, not-explain 2/3, need 2)
+  -> result.json   (67 s)
